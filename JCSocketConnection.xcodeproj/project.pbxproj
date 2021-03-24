@@ -16,6 +16,11 @@
 		FC166E07260B129100FB4394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E06260B129100FB4394 /* main.m */; };
 		FC166E11260B129100FB4394 /* JCSocketConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E10260B129100FB4394 /* JCSocketConnectionTests.m */; };
 		FC166E1C260B129100FB4394 /* JCSocketConnectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E1B260B129100FB4394 /* JCSocketConnectionUITests.m */; };
+		FC166E31260B12E100FB4394 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E2D260B12E100FB4394 /* GCDAsyncUdpSocket.m */; };
+		FC166E32260B12E100FB4394 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E2E260B12E100FB4394 /* GCDAsyncSocket.m */; };
+		FC166E47260B134F00FB4394 /* SocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E43260B134F00FB4394 /* SocketConnection.m */; };
+		FC166E48260B134F00FB4394 /* SocketHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E46260B134F00FB4394 /* SocketHelper.m */; };
+		FC166E4E260B162D00FB4394 /* SocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC166E4C260B162D00FB4394 /* SocketTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		FC166E17260B129100FB4394 /* JCSocketConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSocketConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC166E1B260B129100FB4394 /* JCSocketConnectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSocketConnectionUITests.m; sourceTree = "<group>"; };
 		FC166E1D260B129100FB4394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC166E2D260B12E100FB4394 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		FC166E2E260B12E100FB4394 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		FC166E2F260B12E100FB4394 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		FC166E30260B12E100FB4394 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		FC166E43260B134F00FB4394 /* SocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketConnection.m; sourceTree = "<group>"; };
+		FC166E44260B134F00FB4394 /* SocketHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketHelper.h; sourceTree = "<group>"; };
+		FC166E45260B134F00FB4394 /* SocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketConnection.h; sourceTree = "<group>"; };
+		FC166E46260B134F00FB4394 /* SocketHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketHelper.m; sourceTree = "<group>"; };
+		FC166E4C260B162D00FB4394 /* SocketTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketTool.m; sourceTree = "<group>"; };
+		FC166E4D260B162D00FB4394 /* SocketTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,8 @@
 		FC166DF3260B128E00FB4394 /* JCSocketConnection */ = {
 			isa = PBXGroup;
 			children = (
+				FC166E36260B12F400FB4394 /* SocketConnection */,
+				FC166E2C260B12E100FB4394 /* CocoaAsyncSocket */,
 				FC166DF4260B128E00FB4394 /* AppDelegate.h */,
 				FC166DF5260B128E00FB4394 /* AppDelegate.m */,
 				FC166DF7260B128E00FB4394 /* SceneDelegate.h */,
@@ -135,6 +152,30 @@
 				FC166E1D260B129100FB4394 /* Info.plist */,
 			);
 			path = JCSocketConnectionUITests;
+			sourceTree = "<group>";
+		};
+		FC166E2C260B12E100FB4394 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				FC166E2F260B12E100FB4394 /* GCDAsyncUdpSocket.h */,
+				FC166E2D260B12E100FB4394 /* GCDAsyncUdpSocket.m */,
+				FC166E30260B12E100FB4394 /* GCDAsyncSocket.h */,
+				FC166E2E260B12E100FB4394 /* GCDAsyncSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		FC166E36260B12F400FB4394 /* SocketConnection */ = {
+			isa = PBXGroup;
+			children = (
+				FC166E45260B134F00FB4394 /* SocketConnection.h */,
+				FC166E43260B134F00FB4394 /* SocketConnection.m */,
+				FC166E44260B134F00FB4394 /* SocketHelper.h */,
+				FC166E46260B134F00FB4394 /* SocketHelper.m */,
+				FC166E4D260B162D00FB4394 /* SocketTool.h */,
+				FC166E4C260B162D00FB4394 /* SocketTool.m */,
+			);
+			path = SocketConnection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC166E32260B12E100FB4394 /* GCDAsyncSocket.m in Sources */,
 				FC166DFC260B128E00FB4394 /* ViewController.m in Sources */,
+				FC166E4E260B162D00FB4394 /* SocketTool.m in Sources */,
+				FC166E48260B134F00FB4394 /* SocketHelper.m in Sources */,
+				FC166E31260B12E100FB4394 /* GCDAsyncUdpSocket.m in Sources */,
 				FC166DF6260B128E00FB4394 /* AppDelegate.m in Sources */,
+				FC166E47260B134F00FB4394 /* SocketConnection.m in Sources */,
 				FC166E07260B129100FB4394 /* main.m in Sources */,
 				FC166DF9260B128E00FB4394 /* SceneDelegate.m in Sources */,
 			);
@@ -444,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6K9Q22JTP;
 				INFOPLIST_FILE = JCSocketConnection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6K9Q22JTP;
 				INFOPLIST_FILE = JCSocketConnection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
