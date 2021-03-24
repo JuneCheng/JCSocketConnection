@@ -12,7 +12,7 @@ ip 和 port号修改成自己的。代码中标注TODO的地方需要自己去�
 
 /** block方式 */
 - (void)blockRequest {
-    NSDictionary *dicReq = @{@"mobile":@"13666672771",
+    NSDictionary *dicReq = @{@"mobile":@"13666666666",
                              @"password":@"123456"};
     [[SocketHelper sharedInstance] writeData:dicReq tag:PDA_LOGIN dialogMsg:@"" success:^(NSDictionary *dic) {
         
@@ -45,7 +45,7 @@ ip 和 port号修改成自己的。代码中标注TODO的地方需要自己去�
 /** delegate方式 */
 - (void)delegateRequest {
     [self openConnection];
-    NSDictionary *dicReq = @{@"mobile":@"13666672771",
+    NSDictionary *dicReq = @{@"mobile":@"13666666666",
                              @"password":@"123456"};
     NSData *dataReq = [SocketTool getRequestData:dicReq FuncNo:PDA_LOGIN];
     [connection writeData:dataReq tag:PDA_LOGIN.intValue dialogMsg:nil];
