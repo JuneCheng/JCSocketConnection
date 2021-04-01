@@ -1,5 +1,5 @@
 # JCSocketConnection
-对CocoaAsyncSocket进行二次封装&amp;三次封装，做了数据的封包&amp;黏包等处理，提供两种block和delegate调用方式，详见代码。
+对CocoaAsyncSocket进行二次封装&amp;三次封装，做了数据的封包&amp;黏包等处理，提供block和delegate两种调用方式，详见代码。
 
 # 注意
 ip 和 port号修改成自己的。代码中标注TODO的地方需要自己去实现或修改，全局搜索下即可
